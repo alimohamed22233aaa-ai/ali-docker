@@ -1,0 +1,16 @@
+services:
+  node-app:
+    build :
+      context: .
+      target: development
+       
+      
+    command: npm run start-dev     
+    volumes:
+      - ${PWD}:/app:ro
+    environment:
+      - NODE_ENV=development
+      
+    
+       
+       
